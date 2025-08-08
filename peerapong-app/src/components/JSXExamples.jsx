@@ -5,7 +5,7 @@ function JSXExamples(){
     const name = 'พี';
     const age = 25;
 
-    const currentYear = new Data().getFullYear();
+    const currentYear = new Date().getFullYear();
 
     const user = {
         firstName: 'พีระพงษ์',
@@ -95,7 +95,7 @@ function JSXExamples(){
                 <div className="product-list">
                     <h3>รายการสินค้า</h3>
                     {[
-                        { id: 1, name: 'โน๊ตบุ๊ค', price: 25000, inStock: true },
+                        { id: 1, name: 'คอพิวเตอร์', price: 25000, inStock: true },
                         { id: 2, name: 'เมาส์', price: 590, inStock: true },
                         { id: 3, name: 'คีย์บอร์ด', price: 1290, inStock: false }
                     ].map(product => (
